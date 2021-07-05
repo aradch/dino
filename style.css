@@ -1,0 +1,87 @@
+#gameDino {
+  width: 800px;
+  height: 200px;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
+#dino {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/dino.png);
+  background-size: 60px 60px;
+  position: relative;
+  top: 150px;
+}
+
+#cactus {
+  width: 30px;
+  height: 30px;
+  background-image: url(img/cactus.png);
+  background-size: 30px 30px;
+  position: relative;
+  top: 110px;
+  left: 760px;
+}
+
+.cactusM {
+  animation: moveCactus 2s infinite linear;
+}
+@keyframes moveCactus {
+  0% {
+    left: 760px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.jump {
+  animation: jumpDino 0.3s linear;
+}
+
+@keyframes jumpDino {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 90px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+button {
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  position: relative;
+  left: 340px;
+  bottom: 50px;
+}
+
+button:hover {
+  background-color: rgba(250, 232, 232, 0.87);
+}
+
+button:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.pos-count {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  top: 50px;
+  right: 350px;
+}
